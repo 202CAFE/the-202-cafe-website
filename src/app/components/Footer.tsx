@@ -1,5 +1,6 @@
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
-import whiteLogo from "../../assets/logo-white.png";
+import whiteLogo from "/assets/logo-white.png";
+import cafeInterior from "/assets/cafe-interior.png";
 
 export function Footer() {
   return (

@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import logo from "../../assets/logo-black.png";
-import whiteLogo from "../../assets/logo-white.png";
+import logo from "/assets/logo-black.png";
+import whiteLogo from "/assets/logo-white.png";
 
 export function Hero() {
   return (

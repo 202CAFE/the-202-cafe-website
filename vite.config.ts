@@ -14,7 +14,14 @@ export default defineConfig({
   build: {
     assetsDir: 'assets',
     outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+    assetsInlineLimit: 0,
   },
+  publicDir: 'public',
 
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
