@@ -1,0 +1,152 @@
+/* Custom styling for react-slick carousel */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slide > div {
+  padding: 0;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* Navigation Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--coffee-brown);
+  color: var(--cream);
+  cursor: pointer;
+  font-size: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: var(--espresso);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid var(--cream);
+  border-right: 2px solid var(--cream);
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-prev::before {
+  transform: rotate(-135deg);
+  margin-left: 3px;
+}
+
+.slick-next {
+  right: -20px;
+}
+
+.slick-next::before {
+  transform: rotate(45deg);
+  margin-right: 3px;
+}
+
+/* Dots */
+.slick-dots {
+  position: relative;
+  bottom: 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 20px 0 0 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--soft-beige);
+  cursor: pointer;
+  font-size: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li button:hover {
+  background-color: var(--coffee-brown);
+  transform: scale(1.2);
+}
+
+.slick-dots li.slick-active button {
+  background-color: var(--coffee-brown);
+  width: 24px;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+}
