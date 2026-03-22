@@ -8,23 +8,23 @@ import "slick-carousel/slick/slick-theme.css";
 
 const galleryImages = [
   {
-    src: "/src/assets/moment-1-chair.jpg",
+    src: "/assets/moment-1-chair.jpg",
     alt: "Wooden chair at 202 Café"
   },
   {
-    src: "/src/assets/moment-2-coffee-machine.jpg",
+    src: "/assets/moment-2-coffee-machine.jpg",
     alt: "Coffee machine at 202 Café"
   },
   {
-    src: "/src/assets/moment-3-coffee-beans.jpg",
+    src: "/assets/moment-3-coffee-beans.jpg",
     alt: "Coffee beans at 202 Café"
   },
   {
-    src: "/src/assets/moment-4-latte-art.jpg",
+    src: "/assets/moment-4-latte-art.jpg",
     alt: "Latte art at 202 Café"
   },
   {
-    src: "/src/assets/moment-5-pastries.jpg",
+    src: "/assets/moment-5-pastries.jpg",
     alt: "Fresh pastries at 202 Café"
   }
 ];
